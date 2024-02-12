@@ -4,3 +4,5 @@ git add \* arba git add . prideda failus i git lauka
 
 git commit -m komentaras.
 git
+
+10000
