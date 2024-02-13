@@ -1,0 +1,11 @@
+{
+  "name": "1.paskaita",
+  "version": "1.0.0",
+  "description": "git add * //arba git add . prideda failus i git lauka",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gintare",
+  "license": "ISC"
+}

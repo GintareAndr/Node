@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="brand-list"></ul>
+    <script>
+      const renderBrandList = (brands) => {
+        const list = document.getElementById("brand-list");
+
+        brands.forEach((brand) => {
+          const listItem = document.createElement("li");
+          listItem.textContent = brand;
+          list.append(listItem);
+        });
+      };
+      fetch("http://localhost:3000/brand")
+        .then((resp) => resp.json())
+        .then((response) => {
+          console.log(response);
+        })
+        .catch((error) => console.log.error(error));
+    </script>
+  </body>
+</html>

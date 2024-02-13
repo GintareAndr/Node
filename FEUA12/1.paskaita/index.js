@@ -17,6 +17,12 @@ app.get("/student", (req, res) => {
     res.send(student);
 });
 
+//1 uzduoties atsakymas.
+const users = ["Aidonas", "Evita", "Nojus"];
+
+app.get("/users", (req, res) => {
+    res.send(users);
+});
 
 app.listen(port,() => {
     console.log(`App is listening  on the port ${port}`);
